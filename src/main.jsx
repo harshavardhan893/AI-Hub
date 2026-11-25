@@ -258,7 +258,7 @@ function App() {
 
     try {
       const response = await fetch(
-        'http://127.0.0.1:8000/api/generate',
+        'https://ai-hub-backend-t9t0.onrender.com/api/generate',
         {
           method: 'POST',
           headers: {
