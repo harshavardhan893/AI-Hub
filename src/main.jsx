@@ -249,7 +249,7 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Connect Generate button to the real Groq AI backend
+  // Connect Generate button to the live Render backend
   const generate = async () => {
     if (!input.trim() || loading) return;
 
