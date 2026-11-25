@@ -249,7 +249,7 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Connect Generate button to the real Groq AI backend
+  // Connect Generate button to the live Render backend
   const generate = async () => {
     if (!input.trim() || loading) return;
 
@@ -258,7 +258,7 @@ function App() {
 
     try {
       const response = await fetch(
-        'http://127.0.0.1:8000/api/generate',
+        'https://ai-hub-backend-t9t0.onrender.com/api/generate',
         {
           method: 'POST',
           headers: {
